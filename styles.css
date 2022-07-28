@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Russo One', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    height: 800px;
+    max-width: 80vw;
+    border-radius: 1rem;
+    border-style: solid;
+    overflow: hidden;
+}
+
+.hero-image {
+    background-image: url("B.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 50%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50%;
+    background-color: rgba(253, 253, 253, 0.3);
+    color: grey;
+    font-size: 88px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.description-start {
+    padding: 12px;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.description-tease {
+    padding: 12px;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.form-tease {
+    padding: 12px;
+    font-size: 16px;
+}
+form {
+   margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0px 5px 0px gray;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    gap: 10%;
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+input {
+    width: 240px;
+}
+
+button {
+    margin-left: 12px;
+    padding: 8px 36px;
+    font-size: 16px;
+    
+}
+
+.registrered {
+    padding: 12px;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    font-weight: 800;
+    
+}
