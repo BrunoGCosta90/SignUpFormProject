@@ -99,6 +99,17 @@ input {
     margin: 0 10px 5px 10px;
 }
 
+input:focus {
+    outline: 2px solid grey;
+}
+
+input:focus:invalid {
+    outline: 2px solid red;
+}
+
+input:focus:valid {
+    outline: 2px solid green;
+}
 
 button {
     margin-left: 12px;
@@ -107,6 +118,10 @@ button {
     border-style: none;
     border-radius: 25px;
     background-color: grey;
+}
+
+button:hover {
+    opacity: 0.5;
 }
 
 .registrered {
