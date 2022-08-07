@@ -1,3 +1,5 @@
+const email = document.getElementById('user_email');
+const divEmail = document.getElementById('div-email');
 const phone = document.getElementById('phone_number');
 const divPhone = document.getElementById('div-phone');
 const phonePattern = new RegExp("\\([0-9]{2}\\)[0-9]{4,5}-[0-9]{4}");
@@ -8,6 +10,16 @@ const divConfirm = document.getElementById("div-confirm");
 
 document.getElementById('form').addEventListener("keyup", 
     function(){
+        if(email.checkValidity() == false){
+            divEmail.classList.add("invalid-email");
+        } else {
+            divEmail.classList.remove("invalid-email");
+        }
+
+        if(email.value == ""){
+            divEmail.classList.remove("invalid-email");
+        }
+
         if(phone.checkValidity() == false){
             divPhone.classList.add("invalid-phone");
         } else {

@@ -115,6 +115,14 @@ input:focus:valid {
     
 }
 
+.invalid-email::after{
+    position: relative;
+    display: block;
+    content: "Invalid email";
+    color: red;
+    margin-left: 10px;
+}
+
 .invalid-password::after {
     position: relative;
     display: block;
