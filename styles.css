@@ -70,11 +70,10 @@ form {
 }
 
 form:last-child {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .form-tease {
-
     padding: 20px 12px;
     font-size: 22px;
 }
@@ -109,6 +108,27 @@ input:focus:invalid {
 
 input:focus:valid {
     outline: 2px solid green;
+}
+
+.invalid {
+    outline: 2px solid red !important;
+    
+}
+
+.invalid-password::after {
+    position: relative;
+    display: block;
+    content: "x Passwords don't match";
+    color: red;
+    margin-left: 10px;
+}
+
+.invalid-phone::after{
+    position: relative;
+    display: block;
+    content: "(xx)xxxxx-xxxx";
+    color: red;
+    margin-left: 10px;
 }
 
 button {
